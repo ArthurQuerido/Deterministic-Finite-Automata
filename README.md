@@ -12,9 +12,7 @@ Check this page to learn more about em if you need or want so: https://www.w3sch
 Our dictionary can be seen as the transition function for our DFA. States are our outter set of keys, symbols are our inner set of keys and Next State is the value for this last set.
 Just like this: 
                   
-dfa = {0:{'a':0, 'b':1},
-       1:{'a':2, 'b':0},         
-       2:{'a':1, 'b':2}}
+dfa = {0:{'a':0, 'b':1}, 1:{'a':2, 'b':0}, 2:{'a':1, 'b':2}}
             
 The function iterates through the string of symbols to be tested, change states accordingly and at the end of the string, it checks wheter the state is in the set of accepted states 
 or not. 
