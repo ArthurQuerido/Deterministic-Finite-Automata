@@ -79,3 +79,5 @@ c = int(input("Input number of strings that are going to be tested: "))
 strings = []
 for i in range(c):
     strings.append(str(input("input string {}: " .format(i+1))))
+    
+    #chaaaaaaange hereee
