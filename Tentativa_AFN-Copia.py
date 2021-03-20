@@ -2,7 +2,7 @@
 """
 Created on Thu Mar 18 11:38:26 2021
 
-@author: stock
+@author: Arthur Querido Lopes
 """
 
 #Function to change state and check if final state is part of the accepted 
@@ -69,3 +69,7 @@ c = int(input("Input number of strings that are going to be tested: "))
 strings = []
 for i in range(c):
     strings.append(str(input("input string {}: " .format(i+1))))
+    
+#testing all strings
+for string in strings:
+    print(AFD(transitions_dictionary, 0, acceptance_states, string))
