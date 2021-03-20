@@ -14,8 +14,8 @@ Just like this:
                   
 dfa = {0:{'a':0, 'b':1}, 1:{'a':2, 'b':0}, 2:{'a':1, 'b':2}}
             
-The function iterates through the string of symbols to be tested, change states accordingly and at the end of the string, it checks wheter the state is in the set of accepted states 
-or not. 
+The function iterates through the string of symbols to be tested, change states accordingly and at the end of the string, it checks wheter the state is in the set of accepted states or not.
+Note that empty words are noted as "-".  
  
 For the inputs: All you need to do provide is all the accepted states and the transitions itself, to build the accepted set and the dictionary respectively.
 Initial state is given directly on the function, as for what I designed this it would only be state 0, then it was way better to keep my code cleaner as possible.
