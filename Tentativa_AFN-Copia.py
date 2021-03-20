@@ -5,9 +5,8 @@ Created on Thu Mar 18 11:38:26 2021
 @author: stock
 """
 
-#function to change state and check if final state is part of the accepted 
+#Function to change state and check if final state is part of the accepted 
 #states' set
-
 def AFD(transitions, initial, accepting, s):
     if s == "-":
         return "rejeita"
@@ -38,23 +37,14 @@ def add_values_in_dict2(sample_dict, key, sup_dict):
 transitions_dictionary = {}
 sup_dictionary = {}
 
-#receiving number of states from user
-n = int(input("Input number of states, min 1 max 11: "))
-
-#Receiving alphabet from user
-n_sigma, symbols = input("Enter alphabet lenght followed by its' symbols: ").split(' ',1)
-symbols = symbols.split()
-n_sigma = int(n_sigma)
-
 #Receiving acceptance states from user
-k, acceptance_states = input("Enter number of acceptance states\
- followed by their numbers: ").split(' ', 1)
+acceptance_states = input("Enter acceptance states separated by space: ")
 acceptance_states = set(acceptance_states.split())
 
-#receiving number of transitions from user
+#Receiving number of transitions from user
 t = int(input("Input number of transitions present in the transition function: "))
 
-#receiving transitions from user
+#Receiving transitions from user
 transitions = []
 for i in range(t):
     transitions.append(input("Enter input {}: " .format(i+1)))
@@ -75,9 +65,7 @@ for trans in transitions:
 #Receiving number of strings to be tested
 c = int(input("Input number of strings that are going to be tested: "))
 
-#receiving strings one by one
+#Receiving strings one by one
 strings = []
 for i in range(c):
     strings.append(str(input("input string {}: " .format(i+1))))
-    
-    #chaaaaaaange hereee
