@@ -22,4 +22,4 @@ Initial state is given directly on the function, as for what I designed this it 
 
 IMPORTANT: As the code doesn't know beforehand what is your alphabet and your states's set, you must input all transitions in the same order as you would on a transition function table.
 Example: If you have 3 states, you must enter all transititions for state 0, then state 1, then state 2 or else it wont work.
-Now I didn't take my time to validate inputs, as this can be done later if wanted and Im currently developing a Non-Deterministic Finite Automat. So, be careful with inputs.
+Now I didn't take my time to validate inputs, as this can be done later if wanted and Im currently developing a Non-Deterministic Finite Automata. So, be careful with inputs.
